@@ -1,0 +1,144 @@
+body,header {
+    margin: auto;
+    border: 1px solid black;
+}
+
+.header {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+}
+
+nav>a {
+    margin: 1rem;
+    text-decoration: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    height: 5em;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.main-banner {
+    margin: 10% auto;
+    width: 80%;
+    height: 40vh;
+    min-height: auto;
+    max-width: 600px;
+}
+
+.main-text {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: lightgrey;
+}
+
+.main-banner,
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 5px black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.title {
+    margin: 3rem auto;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "a a a"
+    "b b c";
+    margin: 1rem auto;
+    max-width: 900px;
+    margin-bottom: 10vh;
+}
+
+.project-title {
+    grid-area: a;
+    padding: 1rem 5rem;
+    font-size: 2rem;
+}
+
+.project>img {
+    width: 100%;
+    grid-area: b / b / b / c;
+}
+
+.project-desc {
+    grid-area: c;
+    align-self: center;
+    justify-self: end;
+    height: 30vh;
+    width: 20rem;
+    margin-right: 10%;
+}
+
+.project-desc>p {
+    padding: 20px 40px;
+    height: auto;
+}
+
+.footer-cont {
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a b";
+    grid-gap: 2rem;
+    border: 1px solid red;
+}
+
+.footer-msg {
+    grid-area: a;
+    text-align: end;
+    align-self: baseline;
+    margin: 2rem 0;
+}
+
+form {
+    grid-area: b;
+    width: 50%;
+    margin: 2rem 0;
+    align-self: start;
+}
+
+form>input {
+    color: rgb(87, 87, 87);
+    margin: .5rem 0;
+    height: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+form>label {
+    margin-top: 5rem;
+}
+
+#submit-btn {
+    width: 50%;
+    justify-self: center;
+    background-color: black;
+    color: white;
+    height: 5em;
+}
