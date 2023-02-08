@@ -1,3 +1,7 @@
+* {
+    text-decoration: none;
+}
+
 body,header {
     margin: auto;
     border: 1px solid black;
@@ -38,7 +42,7 @@ button {
     font-size: 2rem;
 }
 
-.projects {
+#projects {
     display: flex;
     flex-direction: column;
     align-content: center;
